@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  height: 2.5em;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: rgb(83, 83, 81);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  width: 90%;
+  margin: 3.5em auto 0 auto;
+  padding: 1em 1em 0 1em;
+  background-color: rgb(228, 227, 222);
+  height: 100%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-top: 20px;
+}
+
+.personInfo {
+  text-align: center;
+}
+
+.personInfo li {
+  display: block;
+}
+
+.profile h2 {
+  text-align: center;
+}
+.profile {
+  width: 75%;
+  margin: 2em auto 2em auto;
+  text-align: center;
+}
+
+.skill {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.flex-item {
+  margin: 0.5em;
+}
+
+.edu{
+  width: 50%;
+  margin: 3em auto;
+  text-align: center;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.experience {
+  width: 75%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.grid2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.hobbies {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+  height: 4em;
+  text-align: center;
+  background-color: rgb(83, 81, 81);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#blink {
+  animation-name: blinkingText;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+progress {
+  background-color: green;
+}
+
+@keyframes blinkingText {
+  0% { color: rgb(255, 255, 255); }
+  49% { color:red; }
+  50% { color: forestgreen; }
+  79% { color: blue; }
+  100% { color: black; }
+}
+
+#scrollingText {
+  transform: translateX(100%);
+  animation: scrollingText 10s linear infinite;
+}
+
+@keyframes scrollingText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 768px) {
+
+  .skill {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .flex {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+  }
+
+  .edu {
+    width: 50%;
+    margin: 3em auto;
+    text-align: center;
+  }
+
+  .grid1, .grid2 {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+
+  nav {
+    font-size: 1.5em;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .edu {
+    width: 50%;
+    margin: 3em auto;
+    text-align: center;
+  }
+}
