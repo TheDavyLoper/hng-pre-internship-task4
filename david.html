@@ -16,19 +16,22 @@
 		</nav>
 	</header>
 	<main>
-    <img src="https://res.cloudinary.com/thedavyloper/image/upload/v1566523832/david_gcc_xf6s39.jpg" alt="david">
+    
 		<section class="personInfo">
 			<h1>David Alphonsus Akpan</h1>
 			<ul>
 				<li>4B, Espanyol street, off Jeans Avenue</li>
 				<li>Lisboa, Jos.</li>
-				<li>Email: lewebber007@gmail.com</li>
-				<li>Tel: +234-708xxxxxxx</li>
+				<li><strong>Email:</strong> lewebber007@gmail.com</li>
+				<li><strong>Tel:</strong> +234-708xxxxxxx</li>
 			</ul>
 		</section>
 
 		<section class="profile">
-			<article>
+			<article class="flex-profile">
+					<img src="https://res.cloudinary.com/thedavyloper/image/upload/v1566523832/david_gcc_xf6s39.jpg" alt="david">
+			</article>
+			<article class="flex-profile">
 				<h2>Profile</h2>
 				<p>
 					I have always had an interest in IT, I studied computer science at ND level. 
@@ -76,7 +79,7 @@
 			<div>
 				<p>I am currently in the phase 2 of Andela’s ALC GrowWithGoogle scholarship programme.</p>
 				<p>I have completed freecodecamp’s Responsive Web Design curriculum and completed the projects.</p>
-				<p>My GitHub repo: <a href="https://github.com/thedavyloper">thedavyloper</a></p>
+				<p>My GitHub repo: <a href="https://github.com/thedavyloper" id="link-green">thedavyloper</a></p>
 			</div>
 
 			<div class="grid2">
@@ -98,14 +101,42 @@
 			</div>
 		</section>
 
-		<section class="hobbies">
+		<section id="hobbies">
 			<h2>Hobbies</h2>
-			<p>I love watching football</p>
-			<p>I am a big boxing and the UFC fan</p>
+			<p>I love watching football, I am a big boxing and the UFC fan</p>
+		</section>
+
+		<section id="contact">
+			<form id="form" action="#">
+				<fieldset id="fieldset">
+					<legend>Give Me A Feedback</legend>
+					<div id="display1"></div>
+					<div id="display2"></div>
+					<div id="display3"></div>
+					<div class="form-elements">
+						<label class="form-item" for="fname">First Name <span id="required">*</span></label>
+						<input class="form-item" type="text" id="fname" pattern="/^[a-zA-Z]$/" required>
+						<label class="form-item" for="lname">Last Name <span id="required">*</span></label>
+						<input class="form-item" type="text" id="lname" pattern="/^[a-zA-Z]$/" required>
+						<label class="form-item" for="email">Email <span id="required">*</span></label>
+						<input class="form-item" type="email" id="email" pattern="/^[a-zA-Z]$/" required>
+						<textarea rows="4" placeholder="Enter message here"></textarea>
+					</div>
+					<div class="form-elements2">
+						<input class="form-item2" type="text" id="fname" placeholder="First Name" pattern="/^[a-zA-Z]$/" required>
+						<input class="form-item2" type="text" id="lname" placeholder="Last Name" pattern="/^[a-zA-Z]$/" required>
+						<input class="form-item2" type="email" id="email" placeholder="Email" required>
+						<textarea rows="4" placeholder="Enter message here"></textarea>
+					</div>
+
+					<button id="btn">Send</button>
+				</fieldset>
+			</form>
 		</section>
 	</main>
 	<footer>
 		<p><small>&copy; Rights 2019 Designed by <a href="https://github.com/thedavyloper" id="blink">thedavyloper</small></a></p>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
