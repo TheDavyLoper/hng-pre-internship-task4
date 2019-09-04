@@ -182,16 +182,16 @@ label {
 }
 input {
   width: 15em;
+  border: 1px solid grey;
 }
 
 textarea {
   width: 15em;
-  grid-area: 4/2;
+  grid-area: 5/2;
 }
 
 button {
   margin-top: 1em;
-  
   background-color: #000;
   color: #fff;
   padding: 1em;
@@ -249,7 +249,6 @@ progress {
 
   .form-item2 {
     margin: 0.5em;
-    border: 1px solid grey;
   }
 
   textarea {
