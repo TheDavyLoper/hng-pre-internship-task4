@@ -3,7 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
+  overflow-x: hidden;
 }
+
 
 nav {
   position: fixed;
@@ -30,10 +32,12 @@ main {
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   display: block;
   margin-top: 20px;
+  box-shadow: 1px 1px 5px green,
+  -1px -1px 5px green;
 }
 
 .personInfo {
@@ -48,9 +52,17 @@ img {
   text-align: center;
 }
 .profile {
+  display: flex;
+  justify-content: center;
   width: 75%;
-  margin: 2em auto 2em auto;
+  margin: 0 auto;
+}
+
+.flex-profile {
+  width: 40%;
+  justify-content: center;
   text-align: center;
+  margin: 0 1em;
 }
 
 .skill {
@@ -88,6 +100,13 @@ img {
   text-align: center;
 }
 
+#link-green {
+  color: green;
+}
+
+#link-green:hover {
+  text-shadow: 1px 1px 1px red;
+}
 .grid2 {
   width: 100%;
   display: grid;
@@ -95,7 +114,7 @@ img {
   grid-gap: 1em;
 }
 
-.hobbies {
+#hobbies {
   text-align: center;
   margin-bottom: 0;
 }
@@ -117,6 +136,69 @@ a {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+#form {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#fieldset {
+  width: 40%;
+  margin: 0 auto 5em auto;
+  border: none;
+  text-align: center;
+}
+
+#display1, #display2, #display3 {
+  color: red;
+  font-size: 0.8em;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#required {
+  color: red;
+}
+
+.form-elements {
+  width: 100%;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.form-elements2 {
+  display: none;
+}
+
+label {
+  justify-self: end;
+}
+input {
+  width: 15em;
+  border: 1px solid grey;
+}
+
+textarea {
+  width: 15em;
+  grid-area: 5/2;
+}
+
+button {
+  margin-top: 1em;
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  border-radius: 0.7em;
+  border: none;
+  box-shadow: 1px 1px 1px green,
+              -1px -1px 1px green;
 }
 
 #blink {
@@ -149,6 +231,30 @@ progress {
 }
 
 @media (max-width: 768px) {
+  .profile {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-elements {
+    display: none;
+  }
+
+  .form-elements2 {
+    display: block;
+    width: auto;
+    padding: 1em;
+  }
+
+  .form-item2 {
+    margin: 0.5em;
+  }
+
+  textarea {
+    margin-top: 0.5em;
+    border: 1px solid grey;
+  }
 
   .skill {
     width: auto;
@@ -157,7 +263,7 @@ progress {
   }
 
   .flex {
-    width: 60%;
+    width: auto;
     display: flex;
     margin: 0 auto;
     align-content: center;
@@ -174,6 +280,7 @@ progress {
     display: grid;
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (max-width: 576px) {
@@ -183,8 +290,8 @@ progress {
   }
 
   img {
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    margin: 0 auto;
   }
 
   .edu {
