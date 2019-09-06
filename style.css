@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: white;
   overflow-x: hidden;
+  position: relative;
 }
 
 
@@ -25,10 +26,10 @@ ul {
 
 main {
   width: 90%;
-  margin: 3.5em auto 0 auto;
+  margin: 4.5em auto 0 auto;
   padding: 1em 1em 0 1em;
   background-color: rgb(228, 227, 222);
-  height: 100%;
+  height: auto;
 }
 
 img {
@@ -121,9 +122,9 @@ img {
 
 footer {
   position: absolute;
-  bottom: auto;
+  bottom: -5em;
   width: 100%;
-  height: 4em;
+  height: 5em;
   text-align: center;
   background-color: rgb(83, 81, 81);
   color: white;
@@ -190,8 +191,9 @@ textarea {
   grid-area: 5/2;
 }
 
-button {
-  margin-top: 1em;
+#submit {
+  width: 5em;
+  margin-top: 1.5em;
   background-color: #000;
   color: #fff;
   padding: 1em;
@@ -287,6 +289,10 @@ progress {
 
   nav {
     font-size: 1.5em;
+  }
+
+  main {
+    margin-top: 3.8em;
   }
 
   img {

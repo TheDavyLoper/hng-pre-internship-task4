@@ -5,18 +5,13 @@ const fname = document.querySelector('#fname');
 const lname = document.querySelector('#lname');
 const message = document.querySelector('textarea');
 const button = document.querySelector('#btn');
-firstN = fname.value.split('');
-lastN = lname.value.split('');
-const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-const stringArr = arr.join();
-console.log(stringArr);
 
 const checkFirstName = (e) => {
 	e.preventDefault();
 	if (fname.value == "" ) {
 		return display1.textContent="first Name field cannot be empty";
 	}
-	else if (fname.value.trim().length < 4) {
+	else if (fname.value.trim().length < 4 && fname.value !== "") {
 		return display1.textContent="first Name must be at least 4 characters long";
 	}
 	else {
