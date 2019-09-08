@@ -5,6 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="This is the CV page of David A. Akpan">
+	<meta name="keywords" content="'thedavyloper', '@thedavyloper', 'https://github.com/thedavyloper', 'David Akpan', 'David Alphonsus Akpan', Resume, CV, 'HNG Pre-Internship task', 'frontend developer', 'web developer', 'web dev', developer, software, 'software developer', HNG, startng, 'team moscow', ancora">
+	<meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="David Alphonsus Akpan">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 	<title>My CV Page</title>
 </head>
@@ -13,9 +21,12 @@
 	<header>
 		<nav>
 			<p id="scrollingText">HNG Pre-Internship Task</p>
+			<ul>
+				<li class="navlink"><a href="#contact">Contact Me</a></li>
+			</ul>
 		</nav>
 	</header>
-	<main>
+	<main id="top">
     
 		<section class="personInfo">
 			<h1>David Alphonsus Akpan</h1>
@@ -34,7 +45,7 @@
 			<article class="flex-profile">
 				<h2>Profile</h2>
 				<p>
-					I have always had an interest in IT, I studied computer science at ND level. 
+					A tech enthusiast who has always had an interest in IT, studied computer science at ND level. 
 					I have a background in computer hardware and networking.
 				</p>
 				<p>
@@ -99,6 +110,18 @@
 					<p><i>2011</i></p>
 				</div>
 			</div>
+		<section class="achievement">
+		<h2>Achievement</h2>
+		<p>I was part of the team (Team moscow) that came second in the startng pre-internship
+			programme in which i was an active team member.</p> 
+			<p>We created a website for an NGO called BlessFlame a project idea from Ancora Company.</p> 
+			<p>
+			Ancora company is An NGO where the parents / a proxy can apply for funding (scholarship) 
+			for less privileged children. 
+			BlessFlame focus on scholarships for the less privileged to attend primary, secondary and university.
+		</p>
+	</section>
+
 		</section>
 
 		<section id="hobbies">
@@ -107,7 +130,7 @@
 		</section>
 
 		<section id="contact">
-			<form id="form" action="#">
+			<form id="form" action="data.php" method="post">
 				<fieldset id="fieldset">
 					<legend>Give Me A Feedback</legend>
 					<div id="display1"></div>
@@ -115,28 +138,21 @@
 					<div id="display3"></div>
 					<div class="form-elements">
 						<label class="form-item" for="fname">First Name <span id="required">*</span></label>
-						<input class="form-item" type="text" id="fname"required>
+						<input class="form-item" type="text" name="fname" id="fname" placeholder="First Name" required>
 						<label class="form-item" for="lname">Last Name <span id="required">*</span></label>
-						<input class="form-item" type="text" id="lname" required>
+						<input class="form-item" type="text" name="lname" id="lname" placeholder="Last Name" required>
 						<label class="form-item" for="email">Email <span id="required">*</span></label>
-						<input class="form-item" type="email" id="email" required>
+						<input class="form-item" type="email" name="email" id="email" placeholder="Email" required>
 						<label class="form-item" for="subject">Subject <span id="required">*</span></label>
-						<input class="form-item" type="text" id="subject" pattern="/^[\w$/" required>
-						<textarea rows="4" placeholder="Enter message here"></textarea>
+						<input class="form-item" type="text" name="subject" id="subject" placeholder="Subject" required>
+						<textarea rows="4" name="message" placeholder="Enter message here"></textarea>
 					</div>
-
-					<div class="form-elements2">
-						<input class="form-item2" type="text" id="fname" placeholder="First Name" required>
-						<input class="form-item2" type="text" id="lname" placeholder="Last Name" required>
-						<input class="form-item2" type="email" id="email" placeholder="Email" required>
-						<input class="form-item" type="text" id="subject" pattern="/^[\w$/" placeholder="Subject" required>
-						<textarea rows="4" placeholder="Enter message here"></textarea>
-					</div>
-
+				
 					<input id="submit" type="submit" name="submit" value="submit" >
 				</fieldset>
 			</form>
 		</section>
+		<div id="backToTop"><a href="#top">Back to top <i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
 	</main>
 	<footer>
 		<p><small>&copy; Rights 2019 Designed by <a href="https://github.com/thedavyloper" id="blink">thedavyloper</small></a></p>
